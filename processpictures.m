@@ -18,7 +18,7 @@ function processPictures(originDir, directory, iNumPixels)
     %files = dir('../Dataset/Rainy/*.jpg');
     %files = dir(sprintf('../Dataset/%s/*.jpg', category));
    
-    access_files = strcat(originDir,'/*.jpg');
+    access_files = strcat(originDir,'\*.jpg');
     files = dir(access_files);
 
     %Variable with the directory where images came from
