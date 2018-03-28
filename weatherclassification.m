@@ -52,8 +52,8 @@ function weatherclassification()
     % Arrays to store the required directory paths
     origindirectories = {};
     directoriesforspimages = {};
-    DatasetPath = '/home/zeba/Code/Dataset/';
-    MarkedDatasetPath = '/home/zeba/Dataset/marked/';
+    DatasetPath = 'C:\Dataset\';
+    MarkedDatasetPath = 'C:\Dataset\25\';
 
     disp('[LOG] Gathering relevant directories')
 
