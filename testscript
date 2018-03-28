@@ -1,0 +1,10 @@
+categories = {sprintf('cloudy'), sprintf('foggy'), sprintf('rainy'), sprintf('snowy'), sprintf('sunny')};
+models = {sprintf('bvlc_googlenet'),sprintf('placesCNN'),sprintf('ResNet50'),sprintf('ResNet101'),sprintf('ResNet152'),sprintf('VGG_CNN_F'),sprintf('VGG_CNN_M'),sprintf('VGG_CNN_S'),sprintf('VGGNet16'),sprintf('VGGNet19') };
+origindirectories = {};
+directoriesforspimages = {};
+DatasetPath = '/home/zeba/Code/Dataset/';
+MarkedDatasetPath = '/home/zeba/Dataset/%s_marked/';
+NoOfCategories = size(categories)
+for i = 1:1:NoOfCategories(2)
+       directoryoriginaux = [DatasetPath char(categories(i))];
+end
