@@ -25,10 +25,12 @@ function drawsuperpixelsonimage( imageFile, iNumPixels, count, directory)
     [L,N] = superpixels(A,iNumPixels);
     BW = boundarymask(L);
     % *******
+    directory = strcat(directory,'\');
+%      final = char(strcat(directory,pad(string(count),4,'left','0')))
     
     f = figure('visible', 'off');
     iptsetpref('ImshowBorder','tight');
     imshow(imoverlay(A,BW,'cyan'),'InitialMagnification','fit')
-    saveas(f,char(strcat(directory,pad(string(count),4,'left','0'))),'jpg')
+   saveas(f,char(strcat(directory,pad(string(count),4,'left','0'))),'jpg')
 end
 
