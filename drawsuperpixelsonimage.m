@@ -10,7 +10,7 @@
 %   directory - path to location where modified image is expected to be
 %               saved
 
-function drawsuperpixelsonimage( imageFile, iNumPixels, count, directory)
+function drawsuperpixelsonimage( imageFile, iNumPixels, count, directory,col)
 
     %   The following lines of code are from MATLAB's documentation
     %   source code with slight modifications
@@ -28,9 +28,11 @@ function drawsuperpixelsonimage( imageFile, iNumPixels, count, directory)
     directory = strcat(directory,'\');
 %      final = char(strcat(directory,pad(string(count),4,'left','0')))
     
-    f = figure('visible', 'off');
-    iptsetpref('ImshowBorder','tight');
-    imshow(imoverlay(A,BW,'cyan'),'InitialMagnification','fit')
-   saveas(f,char(strcat(directory,pad(string(count),4,'left','0'))),'jpg')
+    %figure
+    %iptsetpref('ImshowBorder','tight');
+    I = imoverlay(A,BW,col);
+   %imshow(imoverlay(A,BW,'cyan'),'InitialMagnification','fit')
+   imwrite(I,char(strcat(directory,pad(string(count),4,'left','0'),'.jpg')));
+  % saveas(f,char(strcat(directory,pad(string(count),4,'left','0'))),'jpg')
 end
 

@@ -13,7 +13,7 @@
 
 
 
-function processPictures(originDir, directory, iNumPixels)
+function processPictures(originDir, directory, iNumPixels,col)
     %Identify the images to process
     %files = dir('../Dataset/Rainy/*.jpg');
     %files = dir(sprintf('../Dataset/%s/*.jpg', category));
@@ -49,7 +49,7 @@ function processPictures(originDir, directory, iNumPixels)
         A = imread(strcat(originDir,aux));
 
         %Using the custom image that adds the pixels and saves the image
-        drawsuperpixelsonimage(A,iNumPixels,count,directory);
+        drawsuperpixelsonimage(A,iNumPixels,count,directory,col);
 
         aux = '';
         count = count + 1;
