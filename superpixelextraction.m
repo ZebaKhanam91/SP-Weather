@@ -1,4 +1,4 @@
-% weatherclassification
+% superpixelextraction
 %       Function that trains a series of classifiers using different models
 %       as feature extractors
 
@@ -12,7 +12,7 @@
 %   runid - char sequence to identify a given execution of the script
 
 
-function weatherclassification()
+function superpixelextraction()
 
     % Define parameters
     % The following lines have the all the models and categories used for the
