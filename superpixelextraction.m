@@ -1,15 +1,14 @@
 % superpixelextraction
-%       Function that trains a series of classifiers using different models
-%       as feature extractors
+%       Function that overlays superpixel boundaries on the image
 
 % Parameters
-%   models - array of chars specifying the models to use
 %   categories - array of the categories to be used for the current
 %       iteration
 %   superpixels - number of superpixels to use (0 if no superpixels are to
 %       be used
-%   C - constant for the classifier
-%   runid - char sequence to identify a given execution of the script
+%  color of superpixel boundaries to be overlayed
+%  
+
 
 
 function superpixelextraction()

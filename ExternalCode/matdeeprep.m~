@@ -191,7 +191,7 @@ end
 close(h)
 delete(h)
 fprintf('\n');
-cprintf('*text', '??? Positive Training : %s \n',model);
+cprintf('*text', '??? Positive Training : %s\n',model);
 
 % Negative Training 
 h = waitbar(0,'Negative Training...','Name', 'TRAINING IN PROGRES');
